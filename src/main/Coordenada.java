@@ -3,16 +3,15 @@ package main;
 public class Coordenada {
 
 	private int x, y;
-	private int ancho;
-	private int alto;
-	private boolean blackAndWhite;
+	private int r,g,b;
 
-	public Coordenada(int x, int y, int ancho, int alto, boolean blackAndWhite) {
+	public Coordenada(int x, int y,int r, int g, int b) {
 		this.x = x;
 		this.y = y;
-		this.ancho = ancho;
-		this.alto = alto;
-		this.blackAndWhite = blackAndWhite;
+		this.r = r;
+		this.g = g;
+		this.b = b;
+		
 	}
 
 	public int getX() {
@@ -31,29 +30,30 @@ public class Coordenada {
 		this.y = y;
 	}
 
-	public int getAncho() {
-		return ancho;
+	public int getR() {
+		return r;
 	}
 
-	public void setAncho(int ancho) {
-		this.ancho = ancho;
+	public void setR(int r) {
+		this.r = r;
 	}
 
-	public int getAlto() {
-		return alto;
+	public int getG() {
+		return g;
 	}
 
-	public void setAlto(int alto) {
-		this.alto = alto;
+	public void setG(int g) {
+		this.g = g;
 	}
 
-	public boolean isBlackAndWhite() {
-		return blackAndWhite;
+	public int getB() {
+		return b;
 	}
 
-	public void setBlackAndWhite(boolean blackAndWhite) {
-		this.blackAndWhite = blackAndWhite;
+	public void setB(int b) {
+		this.b = b;
 	}
+
 	
-
+	
 }

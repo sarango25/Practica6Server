@@ -15,8 +15,11 @@ import processing.core.PApplet;
 public class Main extends PApplet {
 
 	// Globales
-	int xBolita = -1000;
-	int yBolita = -1000;
+	int xBolita = 250;
+	int yBolita = 250;
+	int r = 255;
+	int g = 0;
+	int b = 0;
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -59,7 +62,9 @@ public class Main extends PApplet {
 					
 					xBolita = obj.getX();
 					yBolita = obj.getY();
-					
+					r = obj.getR();
+					g = obj.getG();
+					b = obj.getB();
 					
 				}
 
@@ -75,7 +80,7 @@ public class Main extends PApplet {
 
 	public void draw() {
 		background(0, 0, 0);
-		fill(255, 0, 0);
+		fill(r, g, b);
 		ellipse(xBolita, yBolita, 50, 50);
 
 	}
